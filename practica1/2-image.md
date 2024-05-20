@@ -4,7 +4,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+# La imagen es la plantilla y el docker es la imagen en ejecución.
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
 ## Comandos para imágenes
@@ -27,7 +27,7 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
-# COMPLETAR 
+# Es un servidor web y proxy inverso de alto rendimiento, ligero y de código abierto.
 
 Descargar la imagen  **nginx** en la versión **alpine**
 # COMPLETAR
