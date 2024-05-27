@@ -31,7 +31,7 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 ```
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
-# docker exec srv-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+# docker exec srv-jenkins ls -a
 
 ### ¿Para qué se usa el comando ls?
 Para listar los archivos y directorios en el directorio actual.
@@ -74,7 +74,8 @@ Ejecutar
 ```
 whoami
 ```
-# COLOCAR UNA CAPTURA DE PANTALLA
+# ![image](https://github.com/jonathanpoaquiza75/2024A-ISWD633-GR1/assets/109117858/65bc5ca1-90bb-4181-bfd9-257110ebe837)
+
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -94,9 +95,10 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 ### Ahora puedes acceder al contenedor de jenkins y obtener la contraseña ubicada en /var/jenkins_home/secrets/initialAdminPassword
 
-# COMPLETAR
+# docker exec srv-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
-### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+### ![image](https://github.com/jonathanpoaquiza75/2024A-ISWD633-GR1/assets/109117858/1dbffa59-bdf0-4aa4-998e-e86c600d6c83)
+
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
