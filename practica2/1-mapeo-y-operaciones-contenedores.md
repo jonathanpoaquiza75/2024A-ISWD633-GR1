@@ -15,9 +15,10 @@ docker run -P -d --name <nombre contenedor> <nombre imagen>:<tag>
 No puedes mapear puertos a un contenedor existente directamente después de su creación con Docker. El mapeo de puertos debe especificarse en el momento de crear y ejecutar el contenedor.
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
-# COMPLETAR
+# docker run -d --name srv-jenkins --publish published=50000,target=50000 --publish published=8080,target=8080 jenkins/jenkins:alpine3.18-jdk11
 
-# COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
+![image](https://github.com/jonathanpoaquiza75/2024A-ISWD633-GR1/assets/109117858/bd14c3ea-be65-449c-a1f8-287a7cb472a7)
+
 
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
@@ -30,12 +31,16 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 ```
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
-# COMPLETAR
+# docker exec srv-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
 ### ¿Para qué se usa el comando ls?
+Para listar los archivos y directorios en el directorio actual.
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+Para mostrar los permisos e información adicional del listado.
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
-# COMPLETAR
-# COLOCAR UNA CAPTURA DE PANTALLA
+# docker exec srv-jenkins ls -l
+# ![image](https://github.com/jonathanpoaquiza75/2024A-ISWD633-GR1/assets/109117858/5cd1039b-b6f3-4f09-b26a-538fde162a72)
+
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
