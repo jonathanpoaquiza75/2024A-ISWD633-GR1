@@ -41,9 +41,10 @@ docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión>
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
+# docker run -d -P --name srv-mysql --env-file=variables.env mysql:8
 
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+# ![alt text](image.png)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+# Entro al contenedor con este comando: docker exec -it srv-mysql mysql -uroot -p
+ ![alt text](image-1.png)
