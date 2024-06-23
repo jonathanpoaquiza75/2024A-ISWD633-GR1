@@ -1,3 +1,3 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+# Aprendí que los volumnes son parte esencial de Docker y que sirven para que los datos persistan y sean accesibles por los contenedores.
+# Además, se debe tener en cuenta los tipos de volumenes que son: volumen de host, nombrado y anónimo, cuando se crea un contenedor y las configuraciones asociadas a los mismos.
+# Lo difícil de la práctica fue buscar en la documentación las rutas de las carpetas contenedoras de los contenedores usados, para poder asociarlos a los volumenes creados.
