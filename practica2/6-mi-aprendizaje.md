@@ -1,3 +1,3 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+# Entendí cómo funciona el mapeo de puertos, las variables de entorno, el uso de redes y de contenedores asociados a éstas.
+# Además, los ejercicios se complicaron debido a las configuraciones adicionales que requieren cada uno de los contenedores al momento de ser creados con una imagen en espoecífico.
+
