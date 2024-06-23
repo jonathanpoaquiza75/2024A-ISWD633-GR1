@@ -7,26 +7,32 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 
 ### Crear un volumen tipo host con la imagen nginx:alpine, para la ruta carpeta host: directorio en donde se encuentra la carpeta html en tu computador y para la ruta carpeta contenedor: /usr/share/nginx/html esta ruta se obtiene al revisar la se obtiene desde la documentación
 ![Volúmenes](imagenes/volumen-host.PNG)
-# COMPLETAR CON EL COMANDO
+# docker run -d --name srv-nginx -v "C:\Users\PC\Desktop\Jonathan\6to semestre\Construccion y evolucion de SW\Practicas\2024A-ISWD633-GR1\practica3\nginx\html:/usr/share/nginx/html" nginx:alpine
+
+# La ruta entre comillas
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Tiene todas las carpetas normales de un servidor nginx
+![alt text](image.png)
 
 ### ¿Qué pasa con el archivo index.html del contenedor?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Fue reemplazado por el archivo del directorio local. 
+![alt text](image-1.png)
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Los cambios realizados en la carpeta host se actualizan automáticamente en la carpeta contenedor.
+# ls /usr/share/nginx/html
 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
+# docker stop srv-nginx
+# docker rm srv-nginx
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Se mantienen los cambios, es decir, el volumen no se borró a pesar de haber eliminado el contenedor.
 
 ### ¿Qué hace el comando pwd?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Devuelve la ruta del directorio actual, con la finalidad de ubicarse o conocer específicamente el directorio donde se está trabajando, para no cometer errores al ejecutar comandos en directorios específicos.
 Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
 
 
