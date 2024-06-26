@@ -1,3 +1,4 @@
-# Aprendí que los volumnes son parte esencial de Docker y que sirven para que los datos persistan y sean accesibles por los contenedores.
+# Aprendí que los volumenes son parte esencial de Docker y que sirven para que los datos persistan y sean accesibles por los contenedores.
 # Además, se debe tener en cuenta los tipos de volumenes que son: volumen de host, nombrado y anónimo, cuando se crea un contenedor y las configuraciones asociadas a los mismos.
+# Como recomendación, asegurarse que las variables de entorno estén bien configuradas en la creación de los contenedrores, para que se pueda acceder al servidor de wordpress sin problemas.
 # Lo difícil de la práctica fue buscar en la documentación las rutas de las carpetas contenedoras de los contenedores usados, para poder asociarlos a los volumenes creados.
